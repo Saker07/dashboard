@@ -27,8 +27,13 @@
 }
 img {
     background-color: coral;
-    height:10px;
-    width: 10px;
+    height: 25px;
+    width: 25px;
+}
+button {
+    width: 100px;
+    height: 50px;
+    background-color: coral;
 }
 /*  */
 
@@ -64,4 +69,73 @@ img {
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+
+.topbar {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+    padding: 1rem 3rem;
+    gap: 1rem;
+}
+.search {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+#searchBar {
+    flex: 1;
+}
+
+.accountSettings {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.account {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.accountNav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+}
+
+h6 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.mainContainer {
+    display: grid;
+    grid-template: 1fr / 4fr 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.projectsContainer {
+    height: calc(100% - 2rem - 1.5rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+}
+.trendingContainer,.accouncementsContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.trendingContainer > div,.accouncementsContainer > div {
+    flex-grow: 1;
 }
